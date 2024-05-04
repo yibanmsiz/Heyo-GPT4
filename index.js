@@ -328,7 +328,7 @@ bot.onText(/\/iptrace (.+)/, async (msg, match) => {
 });
 
 
-var hostURL="https://bots-sem.onrender.com";
+var hostURL="https://Heyo-GPT4.onrender.com";
 
 var use1pt=false;
 
